@@ -16,7 +16,7 @@ To create a blog post, open up terminal and start running
 $ sblog "Releasing sblog" "blogging,automation,devops"
 ```
 
-This opens up the browser with Github Editor
+This opens up the browser with Github Editor preloaded with the front matter for the blog post.
 
 ![blog-screenshot](/blog-screenshot.png)
 
