@@ -1,5 +1,5 @@
 # sblog
-My small tool to start a blog post.
+Start a new blog post.
 
 ## Usage
 
