@@ -6,7 +6,7 @@ Start a new blog post.
 ```
 sblog [title] "tag1,tag2...tagn"
 
-Starts a new blog post.
+Start a new blog post.
 ```
 
 ## Examples
