@@ -6,8 +6,8 @@ import (
 )
 
 func TestGenerateURL(t *testing.T) {
-	base := "https://github.com/scriptnull/vishnubharathi.codes/new/master/source/_posts"
-	fileName := "example.md"
+	base := "https://github.com/scriptnull/vishnubharathi.codes/new/master"
+	fileName := "source/_posts/example.md"
 	value := "example content"
 
 	url, err := GenerateURL(base, fileName, value)
@@ -15,7 +15,7 @@ func TestGenerateURL(t *testing.T) {
 		t.Errorf("Expects to not error out, err: %s", err)
 	}
 
-	if url != "https://github.com/scriptnull/vishnubharathi.codes/new/master/source/_posts?filename=example.md&value=example+content" {
+	if url != "https://github.com/scriptnull/vishnubharathi.codes/new/master?filename=source%2F_posts%2Fexample.md&value=example+content" {
 		t.Errorf("Expects correct URL to be generated")
 	}
 }

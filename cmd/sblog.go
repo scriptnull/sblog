@@ -56,7 +56,7 @@ func main() {
 		tags = strings.Split(os.Args[2], ",")
 	}
 
-	baseURL := "https://github.com/scriptnull/vishnubharathi.codes/new/master/source/_posts"
+	baseURL := "https://github.com/scriptnull/vishnubharathi.codes/new/master"
 
 	frontMatter := util.GenerateFrontMatter(title, tags)
 	url, err := util.GenerateURL(baseURL, fileName, frontMatter)

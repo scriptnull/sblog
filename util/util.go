@@ -34,12 +34,14 @@ tags: [%s]
 
 // GenerateMarkdownFileName generates a markdown filename
 func GenerateMarkdownFileName(title string) string {
+	postsPath := "source/_posts"
+
 	words := strings.Split(title, " ")
 	for i := range words {
 		words[i] = strings.ToLower(strings.Trim(words[i], " "))
 	}
 	hyphenatedTitle := strings.Join(words, "-")
-	return fmt.Sprintf("%s.md", hyphenatedTitle)
+	return fmt.Sprintf("%s/%s.md", postsPath, hyphenatedTitle)
 }
 
 // GenerateURL generates a Github URL that could be opened for writing a new blog post
