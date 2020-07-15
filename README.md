@@ -1,4 +1,4 @@
-# sblog
+# sblog ![Go](https://github.com/scriptnull/sblog/workflows/Go/badge.svg)
 Start a new blog post.
 
 ## Usage
